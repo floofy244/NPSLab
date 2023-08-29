@@ -77,7 +77,7 @@ int main()
 		close(s);
 		exit(0);
 	}
-	printf("\nSocket accepting.");
+	printf("\nSocket accepting.\n");
 	struct Student stu[2];
 	struct subjects sub[3];
 	struct subject_teacher st[3];
@@ -219,9 +219,9 @@ int main()
 						strcat(buff,stu[0].dep);
 						//strcat(buff," ");
 						//strcat(buff,stu[0].sem);
-						strcat(buff," 3");
+						//strcat(buff," 3");
 						//strcat(buff,stu[0].section);
-						strcat(buff,"  A");
+						strcat(buff,"  A ");
 						strcat(buff,stu[0].subject_id[0]);
 						strcat(buff," ");
 						strcat(buff,stu[0].subject_id[1]);
@@ -237,11 +237,11 @@ int main()
 						strcpy(buff,"");
 						strcpy(buff,"Dept sem section courses: \n");
 						strcat(buff,stu[1].dep	);
-						strcat(buff,"  3");
+						// strcat(buff,"  3");
 						//strcat(buff,stu[1].sem);
 						//strcat(buff,"  ");
 						//strcat(buff,stu[1].section);
-						strcat(buff,"  A");
+						strcat(buff,"  A ");
 						strcat(buff,stu[1].subject_id[0]);
 						strcat(buff," ");
 						strcat(buff,stu[1].subject_id[1]);
