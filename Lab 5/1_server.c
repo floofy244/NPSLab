@@ -62,6 +62,7 @@ int main()
 		break;
 	}
 	no_of_clients++;
+	printf("\n%d", no_of_clients);
 	
 	if ( (childpid = fork ()) == 0 ) {
 	close (s);
@@ -96,7 +97,7 @@ int main()
 		}
 		while(fgets(temp, 512, fp) != NULL) {
 		strcpy(str,temp);
-		printf("%s", str);		
+		printf("%s\t", str);		
 		line_num++;
 		}
 		if(fp) {
