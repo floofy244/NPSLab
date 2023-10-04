@@ -23,11 +23,7 @@ int main()
 	int size = sizeof(struct sockaddr);
 	connect(sockfd, (struct sockaddr*) &c_addr, sizeof(c_addr));
 	
-	/*int buffer[10]={3,2,5,1,6,7,5,3,9,10};
-	int x=4014;
-	send(sockfd, &x, 4 ,0);
-	send(sockfd, buffer, 40 ,0);
-	close(sockfd);*/
+	
 	int buffer[10];
 	int choice, sz, temp, key, ele;
 	int odd[10] = {0};
